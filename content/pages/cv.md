@@ -1,19 +1,19 @@
 ---
 Title: Curriculum Vitae
-Date: 2012-12-01 10:02
+Date: 24/10/2024 18:20
 Status: hidden
 ---
 
 ## Personal details
 
 ----------------------------
-- **place and date of birth:** August 26th 1981, Como (Italy)
+- **place and date of birth:** April 8th 1994, Castellaneta (Italy)
 - **nationality:** Italian
-- **domicile:** Pasturo (Lecco, Italy)
-- **email:** pietro@bertera.it
-- **phone number:** (+39) 338 4007825
-- **web site:** http://www.bertera.it
-- **Git Hub:** https://github.com/pbertera
+- **domicile:** Laterza (Taranto, Italy)
+- **email:** gperrone215@gmail.com
+- **phone number:** (+39) 3493866922
+- **web site:** http://www.gperrone.it
+- **Git Hub:** https://github.com/ThePerro08
 ----------------------------
 
 ## About

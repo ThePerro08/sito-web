@@ -1,13 +1,12 @@
 Title: About
-Date: 2012-12-01 10:02
-
+Date: 24/10/2024
 ##### Who I am
 
-Hi, I'm Pietro Bertera and I live on the Como Lake - Italy.
+Hi, I'm Giuseppe Perrone and I live in Laterza in the south of Italy.
 
 ##### What I do
 
-I work in the IT technical support since many years.
+I work in the IT technical cloud since many years.
 
 ##### About this blog
 
