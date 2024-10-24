@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Pietro Bertera'
-SITENAME = 'Pietro Bertera\'s Blog'
+AUTHOR = 'Giuseppe Perrone'
+SITENAME = 'Giuseppe Perrone\'s Blog'
 SITEURL = 'http://localhost:8000'
 SITETITLE = AUTHOR
 SITESUBTITLE = 'Something about ...'
@@ -44,7 +44,7 @@ PLUGINS = [# These plugins are part of the official `pelican-plugins` repo:
            'cv_pdf',
            ]
 
-DISQUS_SITENAME = "bertera-it"
+DISQUS_SITENAME = "gperrone-it"
 
 LINKS = ()
 
@@ -55,9 +55,9 @@ LINKS = ()
 #         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('linkedin', 'https://www.linkedin.com/in/pietrobertera'),
-          ('github', 'https://github.com/pbertera'),
-          ('twitter', 'https://twitter.com/pbertera'),
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/giuseppeperrone'),
+          ('github', 'https://github.com/giuseppeperrone'),
+          ('twitter', 'https://twitter.com/giuseppeperrone'),
           ('rss', '//bertera.it/feeds/all.atom.xml'))
 
 MENUITEMS = (('Archives', '/archives.html'),
@@ -71,7 +71,7 @@ CC_LICENSE = {
 }
 
 DEFAULT_PAGINATION = 10
-COPYRIGHT_YEAR = 2016
+COPYRIGHT_YEAR = 2024
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

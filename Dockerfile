@@ -1,5 +1,5 @@
 FROM python:3
-MAINTAINER "Pietro Bertera" <pietro@bertera.it>
+MAINTAINER "Giuseppe Perrone" <gperrone@perrone.it>
 
 RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive && \
     apt-get update && apt-get -y upgrade && \

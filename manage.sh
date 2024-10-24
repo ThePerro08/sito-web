@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER=pbertera/pelican
+CONTAINER=gperrone/pelican
 LOCAL_PORT=8000
 SSH_KEY=.ssh/id_rsa
 
