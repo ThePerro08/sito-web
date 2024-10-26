@@ -18,140 +18,109 @@ Status: hidden
 
 ## About
 
-I’m IT professional with more than 15 years of experience about Linux, Cloud platforms, Virtualization, Containers and Containers orchestration.
-I'm working as a Senior Technical Account Manager at Red Hat helping customer on the path of OpenShift adoption on public and private environments.
+I’m IT professional with more than 3 years of experience about Linux, Cloud platforms, Virtualization, Containers and Containers orchestration.
+### Professional Overview
+I'm working as a Infrastructure Specialist focused on Cloud Application Operations, helping enterprises optimize their cloud infrastructure and implement DevOps practices. I have a strong experience in automation, cloud architecture, and Infrastructure as Code with particular focus on monitoring and observability solutions.
 
-I have a strong experience as network and system engineer specialised in  VoIP systems and network management.
-
-Specialities: 
-- VoIP and communication technologies
-- Networking
-- Virtualisation
-- Containers and microservice adoption
+### Specialities:
+- Cloud Infrastructure and DevOps practices
+- Automation and Infrastructure as Code
+- Monitoring and Observability solutions
+- Systems Architecture and Integration
+- CI/CD Implementation
 
 ### Technical skills and competencies:
 
-- *Containers orchestration:* Kubernetes, Red Hat OpenShift, Docker, Podman, CRI-O
-- *GitOps, DevOps & CI/CD:* Tekton, Jenkins, ArgoCD, Red Hat ACM
-- *VoIP:* VoIP networks, Good experience in managing of complex and distributed
-VoIP infrastructures. Cisco CUCM (6.x - 7.x - 8.x), Cisco CM Express, Asterisk,
-OpenSIPS. Deep knowledge in snom products: phones and PBX (snom ONE).
-- *Programming:* Excellent knowledge of the language Python, PHP and Unix Shell
-languages, System Unix programming, GNU/Make; very good knowledge of automation
-in system administration.
-- *VCS Systems:* Project managing with Subversion, CVS, git, Trac, Jira.
-- *Database:* MySQL, PostgreSQL, MSSQL, SQLite.
-- *Networking:* In-depth knowledge of network protocols and issues, daily use of
-Cisco devices (IOS, PIX), Vyatta appliances and network softwares (OpenVPN,
-Openswan, iproute2, iptables, vlan, bridge, VRF), excellent knowledge in issues
-relating to VoIP protocols.
-- *Virtualization:* Good knowledge in virtual infrastructure management, planning
-and migration to virtual systems. VMWare (GSX - ESX - VSphere), KVM. Integration
-of virtual systems with backup and disaster recovery.
-- *Systems:* management integration of systems: GNU/Linux (Red Hat, Debian,
-Ubuntu), Postfix, Bacula, Apache, Bind, PowerDNS, MySQL, PostgreSQL, dhcpd,
-NFS, OpenSSH, OpenLDAP, Radius, OpenSSL, Windows NT/2000/XP/2003,
-Zimbra, Nagios , Samba with integration in Windows networks.
-- *Other:* active in several communities and open source projects, maintainer of software and various projects at [http://www.bertera.it](http://www.bertera.it) and [https://github.com/pbertera](https://github.com/pbertera).
+- *Cloud & Infrastructure:* AWS, Azure, IBM Cloud, Infrastructure as Code (IaC)
+- *DevOps & CI/CD:* Ansible, Jenkins, ServiceNow, Watson, ELK Stack (Elasticsearch, 
+Logstash, Kibana)
+- *Automation & Scripting:* Ansible Playbooks, Shell scripting, Configuration 
+Management
+- *Monitoring & Observability:* ELK Stack, Kibana dashboards, Performance monitoring
+- *Cloud Architecture:* Design and implementation of secure, scalable cloud 
+environments
+- *Project Management:* Technical team leadership, process improvement, collaboration
+- *Programming:* Application development, troubleshooting, maintenance
+- *Systems:* GNU/Linux, Windows Server, Cloud-native applications
+- *Security:* Cloud security best practices, compliance implementation
+- *Other:* Strong problem-solving abilities, team collaboration, communication skills
 
 ## Work experience
-**November 2019 - Now:** *Senior OpenShift Technical Account Manager at Red Hat*
+**September 2022 - Present:** *Infrastructure Specialist - Cloud Application Operations 
+at IBM Consulting CIC*
 
 ###### Duties and responsibilities:
 
-* Helping enterprise customers in their path through the Red Hat OpenShift adoption
-* Post sales technical support
-* Guiding and providing best practices
-* Acting as a customer trusted advisor within Red Hat
+* Technical Team leadership and project management
+* Creating and managing cloud-based environments
+* Managing ticket integration with Watson, Ansible, and ServicesNow
+* Creating and maintaining Ansible Playbooks and Roles
+* Implementing automation for configuration management and deployment
+* Leading process improvement initiatives and team collaboration
 
 ###### Projects:
-* CNI Passthrough: a "fake" CNI plugin acting just as a passthrough plugin, useful to troublshoot SND and containers networks. [Project](https://github.com/pbertera/CNI-passthrough)
-* OCP SMB FlexVolume: a Kubernetes FlexVolume for SMB/CIFS suitable for OpenShift 4. [Project](https://github.com/pbertera/ocp4-smb-flexvolume)
-* OCP Entitlement Operator: an Ansible Operator to entitle an OpenShift cluster through a custom resource. [Project](https://github.com/pbertera/ocp-entitlement-manager-operator)
-* oc-wlogin: `oc` plugin and a companion web app allowing using the browser to login on an OpenShift cluster. [Project](https://github.com/pbertera/oc-wlogin)
+* National Energy Society: Cloud Architecture Design and Sandbox Implementation
+  - Designed and implemented secure, scalable cloud architectures
+  - Set up and managed sandbox environments
+  - Implemented cloud best practices and security measures
+  - Implemented observability using ELK Stack for logs monitoring
+  - Created Kibana dashboards for metrics visualization
 
-###### Publications:
-* [Augmenting OpenShift CLI with Plugins](https://cloud.redhat.com/blog/augmenting-openshift-cli-with-plugins)
-* [Painless services: implementing serverless with rootless Podman and systemd](https://www.redhat.com/en/blog/painless-services-implementing-serverless-rootless-podman-and-systemd)
-* [A Guide to Customizing Red Hat Enterprise Linux CoreOS](https://cloud.redhat.com/blog/red-hat-enterprise-linux-coreos-customization)
-* [Providing Multi-Tenancy and Network Isolation to the Edge](https://cloud.redhat.com/blog/providing-multi-tenancy-and-network-isolation-to-the-edge)
+* Telco Company: Ticketing Automation Implementation
+  - Led ticketing automation initiative using Watson, Ansible, and ServicesNow
+  - Developed and maintained Ansible playbooks for configuration management
+  - Improved operational processes and team collaboration
+  - Provided technical troubleshooting and maintenance support
+
+* National Banking Society: IaC Implementation
+  - Implemented Infrastructure as Code (IaC) methodology
+  - Analyzed and implemented customer requirements
+  - Created automated application deployment solutions
+  - Developed Ansible playbooks for application distribution
 
 ----------------------------
 
-**July 2015 - November 2019:** *Head of global support and training at Snom Technology AG*
+**January 2021 - September 2022:** *Application Developer at Accenture*
 
 ###### Duties and responsibilities:
 
-* 3rd level support for major customer
-* debugging and issue triaging for the software development department
-* support and training team coordination
-* organising, managing and conduction certification classroom courses and online trainings
+* Application development and deployment in cloud environments
+* Cross-functional team collaboration
+* Customer engagement and support
+* System troubleshooting and maintenance
+* Implementation of DevOps practices
 
 ###### Projects:
+* National Energy Society: Observability Implementation
+  - Managed information monitoring through ELK
+  - Used Elasticsearch analytics engine for information processing
+  - Created dashboards on Kibana for data visualization
+  - Implemented monitoring best practices
 
-* SPLiT: "SIP Phone Learning Tool" Python self-contained tool used during the training, the code is free software hosted on [github](https://github.com/pbertera/SPLiT)
-* Helpdesk migration: managed the migration of the company helpdesk from Kayako to Freshdesk, tickets migration (more than 1000 tickets) was automated coding a tool which interacts between the Kayako SQL database and the Freshdesk REST APIs. I also coded some Freshdesk [plugins](https://github.com/pbertera/Freshdesk-hacks) to tailor at the best the Freshdesk integration with some other company tools (JIRA, Trello, etc..)
-* Snom IO: designed and implemented the [Snom IO](http://docs.snom.io) documentation website based on [Mkdocs](http://www.mkdocs.org/), [Python](http://www.python.org), [Docker](http://www.docker.com) and [GitHub pages](https://pages.github.com/).
-* Snom IO training: designed and deployed a new classroom training with hands-on based on a public GitHub [repository](https://github.com/Snomio/handbook-code)
-* Training: reviewed and applied globally a new training and certification program for VARs and resellers.
+## Education
 
-----------------------------
+- *Management Engineering:* Laurea Industriale L-9, Facoltà di Ingegneria, IT, 2020
+- *Mechanics:* Diploma Tecnico Industriale, ITIS GB Pentasuglia, IT, 2013
 
-**November 2011 - July 2015:** *Technical and certification manager at Snom Technology AG*
+## Languages
+- Italian: Native
+- English: Very Good
 
-###### Duties and responsibilities:
+## Additional Information
+Demonstrated ability to work effectively in diverse, cross-functional teams with 
+strong performance under pressure. Active participation in team sports including 
+football, basketball, and rugby.
 
-* support manager for VARs and partners trough email and ticketing system
-* training manager for all Snom partnership programs.
-* classroom teacher in snom certification programs.
-* IT manager for the local Snom datacenter
-
-###### Projects:
-
-* SIPPing: a flexible and easy to use SIP Packets forging tool, the project is hosted on [GitHub](https://github.com/pbertera/SIPPing)
-* SnomPnPd: a multicast Plug&Play provisioning daemon, this tool is written in Python and hosted on [GitHub](https://github.com/pbertera/snompnpd)
-* VQ-Collector: a SIP RTP-XR (RFC 6035) voice quality collector daemon, the tool is hosted on [GitHub](https://github.com/pbertera/vq-collector)
-
-----------------------------
-
-**January 2011 - November 2011:** *Freelance consultant*
-
-###### Duties and responsibilities:
-
-* IT and Opensource Consultant
-* virtualization, networking, security, backup and disaster recovery systems
-* VoIP Specialist
-
-----------------------------
-
-**December 2005 - November 2010:** *Senior sysadmin and Network architect at Xsec S.r.l.*
-
-###### Duties and responsibilities:
-
-* Management and administration of servers and network devices.
-* Design and management of migration to open source infrastructures.
-* Design and implementation of networks, VPN and remote access systems.
-* Systems virtualization and consolidation, migration to virtual infrastructures
-and clusters.
-* VoIP infrastructure management in complex environments (Cisco and Asterisk).
-* Management and implementation of enterprise monitoring systems.
-
-----------------------------
-
-**January 2001 - December 2005:** *Freelance consultant and developer*
-
-###### Duties and responsibilities: Sysadmin and developer
-
-* Development of web applications (Apache, PHP, *SQL)
-* System Administrator
-* Design and development of video surveillance platforms based on GNU/Linux
-* Teacher in business coursess about GNU/Linux, PHP, UML courses
-* Development of Web Sites and tourism portals.
-
+## Key Areas of Interest
+- DevOps and Cloud Infrastructure
+- IT Automation and Infrastructure as Code
+- Cloud Architecture Design
+- Monitoring and Performance Optimization
+- Security and Compliance in Cloud Environments
 ## Language and education
 
 **Mother Tongue:** Italian
-**Other Languages:** English, French
+**Other Languages:** English
 
-* **2001 - 2008:** *Politecnico of Milan: IT Engineering*
-* **1995 - 2000:** *ITIS - E. Mattei, Sondrio: Electrical Engineer*
+* **2013 - 2020:** *University of Pisa: Management Engineering*
+* **2008 - 2013:** *ITIS - G.B. Pentasuglia, Matera: Mechanical Engineer*
