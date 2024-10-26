@@ -10,7 +10,7 @@ case $1 in
         docker run -it -v ${CUSTOM_DIR}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} -v ${HOME}/${SSH_KEY}:/root/${SSH_KEY}:Z $CONTAINER github
         ;;
     update)
-        docker run -it -v ${CUSTOM_DIR}:/site:rw,Z $CONTAINER html && docker run -it -v ${CUSTOM_DIR}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} $CONTAINER serve 
+        docker run -it -v ${CUSTOM_DIR}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} $CONTAINER serve 
         ;;
     build)
         docker build -t ${CONTAINER} .
