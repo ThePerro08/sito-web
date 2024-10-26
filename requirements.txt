@@ -1,3 +1,6 @@
-ghp-import
-Markdown
 pelican
+markdown
+ghp-import
+pelican-pdf
+pelican-themes
+beautifulsoup4
