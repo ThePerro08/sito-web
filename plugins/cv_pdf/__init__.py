@@ -21,7 +21,7 @@ def generate_pdf(p):
         # Add title and author in Markdown front matter.
         contents = ('---\n'
                     'title: Curriculum vitae\n'
-                    'author: Pietro Bertera\n'
+                    'author: Giuseppe Perrone\n'
                     '---\n\n' +
                     contents)
         with open(fn, 'w') as f:
