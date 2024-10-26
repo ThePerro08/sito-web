@@ -7,7 +7,7 @@ RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive && \
     rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt /
-COPY shutil.py.diff /tmp/
+COPY output /mnt/c/Users/GiuseppePerrone/Documents/sito-web/output
 RUN pip install --upgrade pip && \
     pip install -r /requirements.txt
 #RUN pip install pelican Markdown ghp-import
