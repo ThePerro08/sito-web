@@ -6,15 +6,15 @@ SSH_KEY=.ssh/id_rsa
 
 case $1 in
     deploy)
-        podman run -it -v ${PWD}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} -v ${HOME}/${SSH_KEY}:/root/${SSH_KEY}:Z $CONTAINER github
+        docker run -it -v ${PWD}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} -v ${HOME}/${SSH_KEY}:/root/${SSH_KEY}:Z $CONTAINER github
         ;;
     update)
-        podman run -it -v ${PWD}:/site:rw,Z $CONTAINER html && podman run -it -v ${PWD}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} $CONTAINER serve 
+        docker run -it -v ${PWD}:/site:rw,Z $CONTAINER html && docker run -it -v ${PWD}:/site:rw,Z -p ${LOCAL_PORT}:${LOCAL_PORT} $CONTAINER serve 
         ;;
     build)
-        podman build -t ${CONTAINER} --cgroup-manager=cgroupfs .
+        docker build -t ${CONTAINER} .
         ;;
     *)
-        podman run -it -v ${PWD}:/site -p ${LOCAL_PORT}:${LOCAL_PORT} -v ${HOME}/${SSH_KEY}:/root/${SSH_KEY} $CONTAINER $1
+        docker run -it -v ${PWD}:/site -p ${LOCAL_PORT}:${LOCAL_PORT} -v ${HOME}/${SSH_KEY}:/root/${SSH_KEY} $CONTAINER $1
         ;; 
 esac
