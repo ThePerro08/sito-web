@@ -3,13 +3,13 @@
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/pygments/default.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/pygments/default.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link href="https://www.bertera.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Pietro Bertera's Blog Atom">
+    <link href="https://www.gperrone.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Giuseppe Perrone's Blog Atom">
 
 
 
@@ -30,15 +30,15 @@
 <meta name="author" content="admin" />
 <meta name="description" content="Starting from Asterisk 1.8 you can send multicast rtp streams using the MulticastRTP channel driver. There is an open issue that breaks outgoing RTP if the source channel doesn't contains timing informations (Eg. playing an audio file with Dial(MulticastRTP/basic/239.255.255.245:5555,,A(my-announce ..." />
 <meta name="keywords" content="asterisk, c, multicast, patch, rtp, VoIP">
-<meta property="og:site_name" content="Pietro Bertera's Blog"/>
+<meta property="og:site_name" content="Giuseppe Perrone's Blog"/>
 <meta property="og:title" content="RTP timestamps fix in Asterisk MulticastRTP channels"/>
 <meta property="og:description" content="Starting from Asterisk 1.8 you can send multicast rtp streams using the MulticastRTP channel driver. There is an open issue that breaks outgoing RTP if the source channel doesn't contains timing informations (Eg. playing an audio file with Dial(MulticastRTP/basic/239.255.255.245:5555,,A(my-announce ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://www.bertera.it/rtp-timestamps-fix-in-asterisk-multicastrtp-channels.html"/>
+<meta property="og:url" content="https://www.gperrone.it/rtp-timestamps-fix-in-asterisk-multicastrtp-channels.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2012-12-12 19:09:00+01:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="https://www.bertera.it/author/admin.html">
+<meta property="article:author" content="https://www.gperrone.it/author/admin.html">
 <meta property="article:section" content="VoIP"/>
 <meta property="article:tag" content="asterisk"/>
 <meta property="article:tag" content="c"/>
@@ -47,42 +47,42 @@
 <meta property="article:tag" content="rtp"/>
 <meta property="article:tag" content="VoIP"/>
 <meta property="og:image" content="//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120">
-  <title>Pietro Bertera's Blog &ndash; RTP timestamps fix in Asterisk MulticastRTP channels</title>
+  <title>Giuseppe Perrone's Blog &ndash; RTP timestamps fix in Asterisk MulticastRTP channels</title>
 </head>
 <body>
   <aside>
     <div>
-      <a href="https://www.bertera.it">
-        <img src="//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120" alt="Pietro Bertera" title="Pietro Bertera">
+      <a href="https://www.gperrone.it">
+        <img src="/images/FotoBadge.png" alt="New Description" title="Giuseppe Perrone">
       </a>
-      <h1><a href="https://www.bertera.it">Pietro Bertera</a></h1>
+      <h1><a href="https://www.gperrone.it">Giuseppe Perrone</a></h1>
 <p>Something about ...</p>      <nav>
         <ul class="list">
-          <li><a href="https://www.bertera.it/pages/about.html#about">About</a></li>
-          <li><a href="https://www.bertera.it/pages/contact.html#contact">Contact</a></li>
+          <li><a href="https://www.gperrone.it/pages/about.html#about">About</a></li>
+          <li><a href="https://www.gperrone.it/pages/contact.html#contact">Contact</a></li>
         </ul>
       </nav>
       <ul class="social">
-        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/pietrobertera" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="sc-github" href="https://github.com/pbertera" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/pbertera" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="sc-rss" href="//bertera.it/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/giuseppeperrone" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/gperrone" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/gperrone" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-rss" href="//gperrone.it/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
       </ul>
     </div>
   </aside>
   <main>
     <nav>
-      <a href="https://www.bertera.it">Home</a>
+      <a href="https://www.gperrone.it">Home</a>
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
-      <a href="https://www.bertera.it/feeds/all.atom.xml">Atom</a>
+      <a href="https://www.gperrone.it/feeds/all.atom.xml">Atom</a>
     </nav>
 
 <article>
   <header>
     <h1 id="rtp-timestamps-fix-in-asterisk-multicastrtp-channels">RTP timestamps fix in Asterisk MulticastRTP channels</h1>
-    <p>Posted on Wed 12 December 2012 in <a href="https://www.bertera.it/category/voip.html">VoIP</a></p>
+    <p>Posted on Wed 12 December 2012 in <a href="https://www.gperrone.it/category/voip.html">VoIP</a></p>
   </header>
   <div>
     <p>Starting from Asterisk 1.8 you can <a href="http://www.voip-info.org/wiki/view/Asterisk+MulticastRTP+channels">send multicast rtp
@@ -93,7 +93,7 @@ breaks outgoing RTP if the source channel doesn't contains timing
 informations (Eg. playing an audio file with
 <strong>Dial(MulticastRTP/basic/239.255.255.245:5555,,A(my-announce))</strong>).<br />
 All outgoing RTP frames a timestamp value of 0.</p>
-<p>This <a href="https://www.bertera.it/asterisk_trunk-377802-rtp-multicast-timestamp.patch">patch</a> adds timing information in outgoing RTP stream.</p>
+<p>This <a href="https://www.gperrone.it/asterisk_trunk-377802-rtp-multicast-timestamp.patch">patch</a> adds timing information in outgoing RTP stream.</p>
 <p>Following an example usage in dialplan:  </p>
 <div class="highlight"><pre><span></span>exten =&gt; 999,1,Answer()  
 exten =&gt; 999,n,Dial(MulticastRTP/basic/239.255.255.245:5555,,A(/var/lib/asterisk/moh/mymoh))
@@ -101,12 +101,12 @@ exten =&gt; 999,n,Dial(MulticastRTP/basic/239.255.255.245:5555,,A(/var/lib/aster
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://www.bertera.it/tag/asterisk.html">asterisk</a>
-      <a href="https://www.bertera.it/tag/c.html">c</a>
-      <a href="https://www.bertera.it/tag/multicast.html">multicast</a>
-      <a href="https://www.bertera.it/tag/patch.html">patch</a>
-      <a href="https://www.bertera.it/tag/rtp.html">rtp</a>
-      <a href="https://www.bertera.it/tag/voip.html">VoIP</a>
+      <a href="https://www.gperrone.it/tag/asterisk.html">asterisk</a>
+      <a href="https://www.gperrone.it/tag/c.html">c</a>
+      <a href="https://www.gperrone.it/tag/multicast.html">multicast</a>
+      <a href="https://www.gperrone.it/tag/patch.html">patch</a>
+      <a href="https://www.gperrone.it/tag/rtp.html">rtp</a>
+      <a href="https://www.gperrone.it/tag/voip.html">VoIP</a>
     </p>
   </div>
 <div id="disqus_thread"></div>
@@ -123,7 +123,7 @@ exten =&gt; 999,n,Dial(MulticastRTP/basic/239.255.255.245:5555,,A(/var/lib/aster
 
     <footer>
 <p>
-  &copy; Pietro Bertera 2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+  &copy; Giuseppe Perrone 2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </p>
 <p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p><p>
   <a rel="license"
@@ -147,10 +147,10 @@ exten =&gt; 999,n,Dial(MulticastRTP/basic/239.255.255.245:5555,,A(/var/lib/aster
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
-  "name": " Pietro Bertera's Blog ",
-  "url" : "https://www.bertera.it",
+  "name": " Giuseppe Perrone's Blog ",
+  "url" : "https://www.gperrone.it",
   "image": "//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120",
-  "description": "Pietro Bertera's Thoughts and Writings"
+  "description": "Giuseppe Perrone's Thoughts and Writings"
 }
 </script>
 <script type="application/ld+json">
@@ -164,10 +164,10 @@ exten =&gt; 999,n,Dial(MulticastRTP/basic/239.255.255.245:5555,,A(/var/lib/aster
   "author": {
     "@type": "Person",
     "name": "admin",
-    "url": "https://www.bertera.it/author/admin.html"
+    "url": "https://www.gperrone.it/author/admin.html"
   },
   "image": "//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120",
-  "url": "https://www.bertera.it/rtp-timestamps-fix-in-asterisk-multicastrtp-channels.html",
+  "url": "https://www.gperrone.it/rtp-timestamps-fix-in-asterisk-multicastrtp-channels.html",
   "description": "Starting from Asterisk 1.8 you can send multicast rtp streams using the MulticastRTP channel driver. There is an open issue that breaks outgoing RTP if the source channel doesn't contains timing informations (Eg. playing an audio file with Dial(MulticastRTP/basic/239.255.255.245:5555,,A(my-announce ..."
 }
 </script></body>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Pietro Bertera's Blog</title><link href="https://www.bertera.it/" rel="alternate"></link><link href="https://www.bertera.it/feeds/systems.atom.xml" rel="self"></link><id>https://www.bertera.it/</id><updated>2017-03-28T22:25:00+02:00</updated><entry><title>Introducing dcw: a Poor Man PaaS tool</title><link href="https://www.bertera.it/introducing-dcw-a-poor-man-paas-tool.html" rel="alternate"></link><published>2017-03-28T22:25:00+02:00</published><updated>2017-03-28T22:25:00+02:00</updated><author><name>Pietro</name></author><id>tag:www.bertera.it,2017-03-28:introducing-dcw-a-poor-man-paas-tool.html</id><summary type="html">&lt;p&gt;Dcw (Docker Compose Wrapper) is very small and dirty Bash script wrapping the &lt;a href="https://docs.docker.com/compose/"&gt;&lt;code&gt;docker-compose&lt;/code&gt;&lt;/a&gt; command. The meaning of such wrapper is to expose some &lt;code&gt;docker-compose&lt;/code&gt; &lt;a href="https://docs.docker.com/compose/reference/"&gt;operations&lt;/a&gt;  and a set of well defined commands on the host machine.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Giuseppe Perrone's Blog</title><link href="https://www.gperrone.it/" rel="alternate"></link><link href="https://www.gperrone.it/feeds/systems.atom.xml" rel="self"></link><id>https://www.gperrone.it/</id><updated>2017-03-28T22:25:00+02:00</updated><entry><title>Introducing dcw: a Poor Man PaaS tool</title><link href="https://www.gperrone.it/introducing-dcw-a-poor-man-paas-tool.html" rel="alternate"></link><published>2017-03-28T22:25:00+02:00</published><updated>2017-03-28T22:25:00+02:00</updated><author><name>Pietro</name></author><id>tag:www.gperrone.it,2017-03-28:introducing-dcw-a-poor-man-paas-tool.html</id><summary type="html">&lt;p&gt;Dcw (Docker Compose Wrapper) is very small and dirty Bash script wrapping the &lt;a href="https://docs.docker.com/compose/"&gt;&lt;code&gt;docker-compose&lt;/code&gt;&lt;/a&gt; command. The meaning of such wrapper is to expose some &lt;code&gt;docker-compose&lt;/code&gt; &lt;a href="https://docs.docker.com/compose/reference/"&gt;operations&lt;/a&gt;  and a set of well defined commands on the host machine.&lt;/p&gt;
 &lt;p&gt;The typical use-case is an SSH command executed via the &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; file, in this way you can provide provide some &lt;code&gt;docker-compose&lt;/code&gt; commands that can be execute with some specific &lt;code&gt;docker-compose&lt;/code&gt; config files.&lt;/p&gt;
 &lt;h2&gt;The containers pool&lt;/h2&gt;
 &lt;p&gt;A pool is defined via a &lt;code&gt;docker-compose&lt;/code&gt; YAML config file. The name of the config file defines the pool name.&lt;/p&gt;
 &lt;p&gt;All the YAML config files must reside into the folder defined via the &lt;code&gt;dc_confd&lt;/code&gt; variable.&lt;/p&gt;
 &lt;p&gt;Once you created the config file you are ready to use &lt;code&gt;dcw&lt;/code&gt; as an SSH command.&lt;/p&gt;
 &lt;h2&gt;Usage&lt;/h2&gt;
-&lt;p&gt;First of all you have to clone the &lt;a href="https://github.com/pbertera/dcw"&gt;git repo&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;First of all you have to clone the &lt;a href="https://github.com/gperrone/dcw"&gt;git repo&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; /opt
-$ git clone https://github.com/pbertera/dcw
+$ git clone https://github.com/gperrone/dcw
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -82,10 +82,10 @@ root@23047d54e97b:/#
 &lt;p&gt;If you configured also the &lt;a href="https://slack.com/"&gt;Slack&lt;/a&gt; or &lt;a href="https://www.hipchat.com/"&gt;HipChat&lt;/a&gt; integration all the command will be logged on Slack or HipChat too.&lt;/p&gt;
 &lt;h2&gt;Security&lt;/h2&gt;
 &lt;p&gt;This tool doesn't provide any security feature, so should be used only to provide a simplified way to start/stop containers and execute commands to trusted users only.&lt;/p&gt;
-&lt;p&gt;For any suggestion, improvement or idea feel free to contact me.&lt;/p&gt;</summary><category term="Docker"></category><category term="Bash"></category><category term="SSH"></category></entry><entry><title>A DNS server with Batteries Included with PowerDNS, Docker and Python</title><link href="https://www.bertera.it/a-dns-server-with-batteries-included-with-powerdns-docker-and-python.html" rel="alternate"></link><published>2016-09-06T03:25:00+02:00</published><updated>2016-09-06T03:25:00+02:00</updated><author><name>Pietro</name></author><id>tag:www.bertera.it,2016-09-06:a-dns-server-with-batteries-included-with-powerdns-docker-and-python.html</id><summary type="html">&lt;p&gt;If you have to frequently create, destroy and re-configure DNS zones for testing purposes you will agree that manually editing a Bind &lt;a href="http://www.zytrax.com/books/dns/ch6/mydomain.html"&gt;zone file&lt;/a&gt; is an annoying and error-prone task.&lt;/p&gt;
-&lt;p&gt;In order to make this job simpler I worked on &lt;a href="https://hub.docker.com/r/pbertera/pdns/"&gt;this&lt;/a&gt; Docker container: the container instantiate a &lt;a href="https://www.powerdns.com/"&gt;PowerDNS&lt;/a&gt; and provides an easy-to-use &lt;a href="https://github.com/pbertera/PowerDNS-CLI"&gt;CLI script&lt;/a&gt; interacting with the REST API.&lt;/p&gt;
+&lt;p&gt;For any suggestion, improvement or idea feel free to contact me.&lt;/p&gt;</summary><category term="Docker"></category><category term="Bash"></category><category term="SSH"></category></entry><entry><title>A DNS server with Batteries Included with PowerDNS, Docker and Python</title><link href="https://www.gperrone.it/a-dns-server-with-batteries-included-with-powerdns-docker-and-python.html" rel="alternate"></link><published>2016-09-06T03:25:00+02:00</published><updated>2016-09-06T03:25:00+02:00</updated><author><name>Pietro</name></author><id>tag:www.gperrone.it,2016-09-06:a-dns-server-with-batteries-included-with-powerdns-docker-and-python.html</id><summary type="html">&lt;p&gt;If you have to frequently create, destroy and re-configure DNS zones for testing purposes you will agree that manually editing a Bind &lt;a href="http://www.zytrax.com/books/dns/ch6/mydomain.html"&gt;zone file&lt;/a&gt; is an annoying and error-prone task.&lt;/p&gt;
+&lt;p&gt;In order to make this job simpler I worked on &lt;a href="https://hub.docker.com/r/gperrone/pdns/"&gt;this&lt;/a&gt; Docker container: the container instantiate a &lt;a href="https://www.powerdns.com/"&gt;PowerDNS&lt;/a&gt; and provides an easy-to-use &lt;a href="https://github.com/gperrone/PowerDNS-CLI"&gt;CLI script&lt;/a&gt; interacting with the REST API.&lt;/p&gt;
 &lt;h2&gt;How to use:&lt;/h2&gt;
-&lt;p&gt;Inspired by the illuminating &lt;a href="https://twitter.com/jessfraz"&gt;@jessfraz&lt;/a&gt; &lt;a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/"&gt;post&lt;/a&gt; about containerizing everything, I added to my &lt;a href="https://github.com/pbertera/dotfiles/blob/master/.dockerfunc"&gt;.dockerfunc&lt;/a&gt; some helper functions: &lt;/p&gt;
+&lt;p&gt;Inspired by the illuminating &lt;a href="https://twitter.com/jessfraz"&gt;@jessfraz&lt;/a&gt; &lt;a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/"&gt;post&lt;/a&gt; about containerizing everything, I added to my &lt;a href="https://github.com/gperrone/dotfiles/blob/master/.dockerfunc"&gt;.dockerfunc&lt;/a&gt; some helper functions: &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdns&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;pdns
     &lt;span class="k"&gt;if&lt;/span&gt; is_running &lt;span class="nv"&gt;$name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
@@ -95,7 +95,7 @@ root@23047d54e97b:/#
 
     del_stopped &lt;span class="nv"&gt;$name&lt;/span&gt;
 
-    docker run -it --name &lt;span class="nv"&gt;$name&lt;/span&gt; -e &lt;span class="nv"&gt;API_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;MySecretKey -e &lt;span class="nv"&gt;WEB_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8081&lt;/span&gt; -v &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PDNS_DB&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;:/data/pdns.db -p &lt;span class="m"&gt;8081&lt;/span&gt;:8081 -p &lt;span class="m"&gt;53&lt;/span&gt;:53 -p &lt;span class="m"&gt;53&lt;/span&gt;:53/udp pbertera/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+    docker run -it --name &lt;span class="nv"&gt;$name&lt;/span&gt; -e &lt;span class="nv"&gt;API_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;MySecretKey -e &lt;span class="nv"&gt;WEB_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8081&lt;/span&gt; -v &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PDNS_DB&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;:/data/pdns.db -p &lt;span class="m"&gt;8081&lt;/span&gt;:8081 -p &lt;span class="m"&gt;53&lt;/span&gt;:53 -p &lt;span class="m"&gt;53&lt;/span&gt;:53/udp gperrone/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 
 pdns.py&lt;span class="o"&gt;(){&lt;/span&gt;
@@ -204,7 +204,7 @@ hank-2:~ pietro$ pdns.py --zone example.com. --recordType A --name ns.example.co
 
 
 &lt;h2&gt;Credits&lt;/h2&gt;
-&lt;p&gt;All the credits to &lt;a href="http://everythingshouldbevirtual.com/"&gt;Larry Smith Jr.&lt;/a&gt; for the original pdns.py script and &lt;a href="https://github.com/renan"&gt;Renan Gonçalves&lt;/a&gt; for the original &lt;a href="https://github.com/renan/powerdns-docker"&gt;PowerDNS+MySQL&lt;/a&gt; Docker container&lt;/p&gt;</summary><category term="Docker"></category><category term="Python"></category><category term="REST"></category><category term="PowerDNS"></category></entry><entry><title>Backup your Dropbox share with bacula</title><link href="https://www.bertera.it/backup-your-dropbox-share-with-bacula.html" rel="alternate"></link><published>2012-07-27T22:33:00+02:00</published><updated>2012-07-27T22:33:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2012-07-27:backup-your-dropbox-share-with-bacula.html</id><summary type="html">&lt;p&gt;I don't
+&lt;p&gt;All the credits to &lt;a href="http://everythingshouldbevirtual.com/"&gt;Larry Smith Jr.&lt;/a&gt; for the original pdns.py script and &lt;a href="https://github.com/renan"&gt;Renan Gonçalves&lt;/a&gt; for the original &lt;a href="https://github.com/renan/powerdns-docker"&gt;PowerDNS+MySQL&lt;/a&gt; Docker container&lt;/p&gt;</summary><category term="Docker"></category><category term="Python"></category><category term="REST"></category><category term="PowerDNS"></category></entry><entry><title>Backup your Dropbox share with bacula</title><link href="https://www.gperrone.it/backup-your-dropbox-share-with-bacula.html" rel="alternate"></link><published>2012-07-27T22:33:00+02:00</published><updated>2012-07-27T22:33:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2012-07-27:backup-your-dropbox-share-with-bacula.html</id><summary type="html">&lt;p&gt;I don't
 &lt;a href="http://www.zdnet.com/blog/bott/sorry-dropbox-i-still-dont-trust-you/4173"&gt;like&lt;/a&gt;
 cloud storage, especially I don't like Dropbox security
 &lt;a href="http://www.schneier.com/blog/archives/2011/05/dropbox_securit.html"&gt;history&lt;/a&gt;.&lt;br /&gt;
@@ -320,14 +320,14 @@ Job {
     Command = &amp;quot;/etc/bacula/scripts/sync-dropbox.sh&amp;quot;
   }
 }
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="backup"></category><category term="bacula"></category><category term="bash"></category><category term="dropbox"></category></entry><entry><title>Poor man virtual consolidated backup update</title><link href="https://www.bertera.it/poor-man-virtual-consolidated-backup-update.html" rel="alternate"></link><published>2012-04-01T15:17:00+02:00</published><updated>2012-04-01T15:17:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2012-04-01:poor-man-virtual-consolidated-backup-update.html</id><summary type="html">&lt;p&gt;I just received a little patch to my
-&lt;a href="http://www.bertera.it/index.php/2011/07/25/poor-man-vmware-consolidate-backup/" title="pmvcb"&gt;pmvcb&lt;/a&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="backup"></category><category term="bacula"></category><category term="bash"></category><category term="dropbox"></category></entry><entry><title>Poor man virtual consolidated backup update</title><link href="https://www.gperrone.it/poor-man-virtual-consolidated-backup-update.html" rel="alternate"></link><published>2012-04-01T15:17:00+02:00</published><updated>2012-04-01T15:17:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2012-04-01:poor-man-virtual-consolidated-backup-update.html</id><summary type="html">&lt;p&gt;I just received a little patch to my
+&lt;a href="http://www.gperrone.it/index.php/2011/07/25/poor-man-vmware-consolidate-backup/" title="pmvcb"&gt;pmvcb&lt;/a&gt;
 from Tilman Schmidt.&lt;br /&gt;
 This patch add the support for the new ESXi syntax of
 &lt;strong&gt;snapshot.remove&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;You can download the last pmvcb from my Github
-&lt;a href="https://github.com/pbertera/pmvcb" title="pmvcb download from github"&gt;page&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Thanks Tilman.&lt;/p&gt;</summary><category term="backup"></category><category term="bacula"></category><category term="bash"></category><category term="script"></category></entry><entry><title>How to push a public IP on your laptop using SSH bridged tunnel</title><link href="https://www.bertera.it/how-to-push-a-public-ip-on-your-laptop-using-ssh-bridged-tunnel.html" rel="alternate"></link><published>2012-03-04T23:49:00+01:00</published><updated>2012-03-04T23:49:00+01:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2012-03-04:how-to-push-a-public-ip-on-your-laptop-using-ssh-bridged-tunnel.html</id><summary type="html">&lt;p&gt;In my &lt;a href="http://www.bertera.it/index.php/2008/12/22/vpn-layer-3-con-openssh/" title="VPN layer 3 con OpenSSH"&gt;previous
+&lt;a href="https://github.com/gperrone/pmvcb" title="pmvcb download from github"&gt;page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thanks Tilman.&lt;/p&gt;</summary><category term="backup"></category><category term="bacula"></category><category term="bash"></category><category term="script"></category></entry><entry><title>How to push a public IP on your laptop using SSH bridged tunnel</title><link href="https://www.gperrone.it/how-to-push-a-public-ip-on-your-laptop-using-ssh-bridged-tunnel.html" rel="alternate"></link><published>2012-03-04T23:49:00+01:00</published><updated>2012-03-04T23:49:00+01:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2012-03-04:how-to-push-a-public-ip-on-your-laptop-using-ssh-bridged-tunnel.html</id><summary type="html">&lt;p&gt;In my &lt;a href="http://www.gperrone.it/index.php/2008/12/22/vpn-layer-3-con-openssh/" title="VPN layer 3 con OpenSSH"&gt;previous
 post&lt;/a&gt; I
 talked about Layer 3 VPN feature of OpenSSH (starting from version
 4.3).&lt;br /&gt;
@@ -417,7 +417,7 @@ BRIDGE=br0
 ONBOOT=&amp;quot;yes&amp;quot;
 TYPE=Ethernet
 BRIDGE=br0
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="routing"></category><category term="ssh"></category><category term="vpn"></category></entry><entry><title>How to split DNS name resolution in VPN environment</title><link href="https://www.bertera.it/how-to-split-dns-name-resolution-in-vpn-environment.html" rel="alternate"></link><published>2011-11-30T19:18:00+01:00</published><updated>2011-11-30T19:18:00+01:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2011-11-30:how-to-split-dns-name-resolution-in-vpn-environment.html</id><summary type="html">&lt;p&gt;I'm in this situation:&lt;br /&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="routing"></category><category term="ssh"></category><category term="vpn"></category></entry><entry><title>How to split DNS name resolution in VPN environment</title><link href="https://www.gperrone.it/how-to-split-dns-name-resolution-in-vpn-environment.html" rel="alternate"></link><published>2011-11-30T19:18:00+01:00</published><updated>2011-11-30T19:18:00+01:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2011-11-30:how-to-split-dns-name-resolution-in-vpn-environment.html</id><summary type="html">&lt;p&gt;I'm in this situation:&lt;br /&gt;
 a VPN to remote concentrator that load many routes to private networks,
 vpn server push DNS configuration via OpenVPN protocol (see
 --dhcp-option DNS in openvpn(8) ).&lt;br /&gt;
@@ -522,7 +522,7 @@ DNS server pushed by OpenVPN.&lt;/p&gt;
 &lt;p&gt;You can check the right configuration using dig end tcpdump on tunnel
 interface to see correctly routed DNS query.&lt;br /&gt;
 In finish you must not forget to instruct your dhcp client to use
-127.0.0.1 as a DNS server&lt;/p&gt;</summary><category term="dns"></category><category term="openvpn"></category><category term="powerdns"></category><category term="scripting"></category><category term="vpn"></category></entry><entry><title>Howto configure multiple mac address over a single ethernet interface</title><link href="https://www.bertera.it/howto-configure-multiple-mac-address-over-a-single-ethernet-interface.html" rel="alternate"></link><published>2011-10-04T18:01:00+02:00</published><updated>2011-10-04T18:01:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2011-10-04:howto-configure-multiple-mac-address-over-a-single-ethernet-interface.html</id><summary type="html">&lt;p&gt;I up against this problem on a server hosted by Hetzner.My server is a
+127.0.0.1 as a DNS server&lt;/p&gt;</summary><category term="dns"></category><category term="openvpn"></category><category term="powerdns"></category><category term="scripting"></category><category term="vpn"></category></entry><entry><title>Howto configure multiple mac address over a single ethernet interface</title><link href="https://www.gperrone.it/howto-configure-multiple-mac-address-over-a-single-ethernet-interface.html" rel="alternate"></link><published>2011-10-04T18:01:00+02:00</published><updated>2011-10-04T18:01:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2011-10-04:howto-configure-multiple-mac-address-over-a-single-ethernet-interface.html</id><summary type="html">&lt;p&gt;I up against this problem on a server hosted by Hetzner.My server is a
 virtual hypervisor containing several virtual machines.The Hetzner's
 politics is to statically associate a public IP to a single mac address,
 is therefore impossible to have multiple IP address on a single ethernet
@@ -689,7 +689,7 @@ show all rules: ip rule show )&lt;/li&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    iptables -t nat -I POSTROUTING -o peth0 -s a.a.a.0/24 -j SNAT --to-source A.A.A.A
     iptables -t nat -I POSTROUTING -o peth1 -s b.b.b.0/24 -j SNAT --to-source B.B.B.B
     iptables -t nat -I POSTROUTING -o peth2 -s c.c.c.0/24 -j SNAT --to-source C.C.C.C
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="iptables"></category><category term="linux"></category><category term="networking"></category><category term="routing"></category></entry><entry><title>cisco IOS: Monitorare una vpn</title><link href="https://www.bertera.it/cisco-ios-monitorare-una-vpn.html" rel="alternate"></link><published>2011-08-23T20:54:00+02:00</published><updated>2011-08-23T20:54:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2011-08-23:cisco-ios-monitorare-una-vpn.html</id><summary type="html">&lt;p&gt;Avere a che fare con delle connettività scadenti è sempre un disastro.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="iptables"></category><category term="linux"></category><category term="networking"></category><category term="routing"></category></entry><entry><title>cisco IOS: Monitorare una vpn</title><link href="https://www.gperrone.it/cisco-ios-monitorare-una-vpn.html" rel="alternate"></link><published>2011-08-23T20:54:00+02:00</published><updated>2011-08-23T20:54:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2011-08-23:cisco-ios-monitorare-una-vpn.html</id><summary type="html">&lt;p&gt;Avere a che fare con delle connettività scadenti è sempre un disastro.&lt;/p&gt;
 &lt;p&gt;Uno strumento per tenere monitorata una VPN e reagire in caso di down
 puo' essere comodo.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Esempio:&lt;/strong&gt;&lt;br /&gt;
@@ -740,14 +740,14 @@ guide&lt;/a&gt;&lt;br /&gt;
 &lt;a href="http://www.cisco.com/en/US/docs/ios/ipsla/command/reference/sla_book.html"&gt;Cisco IOS IP SLAs command
 reference&lt;/a&gt;&lt;br /&gt;
 &lt;a href="http://www.cisco.com/en/US/docs/ios/netmgmt/configuration/guide/nm_eem_policy_cli.html"&gt;Writing Cisco embedded event manager
-policy&lt;/a&gt;&lt;/p&gt;</summary><category term="cisco"></category><category term="ios"></category><category term="monitoring"></category><category term="vpn"></category></entry><entry><title>Bacula 5.0.3 debian squeeze backport</title><link href="https://www.bertera.it/bacula-5-0-3-debian-squeeze-backport.html" rel="alternate"></link><published>2011-07-25T22:08:00+02:00</published><updated>2011-07-25T22:08:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2011-07-25:bacula-5-0-3-debian-squeeze-backport.html</id><summary type="html">&lt;p&gt;Packages available here:
-&lt;a href="http://www.bertera.it/software/bacula/bacula-backports/"&gt;http://www.bertera.it/software/bacula/bacula-backports/&lt;/a&gt;&lt;/p&gt;</summary><category term="bacula"></category><category term="debian"></category></entry><entry><title>Poor man vmware consolidate backup</title><link href="https://www.bertera.it/poor-man-vmware-consolidate-backup.html" rel="alternate"></link><published>2011-07-25T21:59:00+02:00</published><updated>2011-07-25T21:59:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2011-07-25:poor-man-vmware-consolidate-backup.html</id><summary type="html">&lt;ul&gt;
+policy&lt;/a&gt;&lt;/p&gt;</summary><category term="cisco"></category><category term="ios"></category><category term="monitoring"></category><category term="vpn"></category></entry><entry><title>Bacula 5.0.3 debian squeeze backport</title><link href="https://www.gperrone.it/bacula-5-0-3-debian-squeeze-backport.html" rel="alternate"></link><published>2011-07-25T22:08:00+02:00</published><updated>2011-07-25T22:08:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2011-07-25:bacula-5-0-3-debian-squeeze-backport.html</id><summary type="html">&lt;p&gt;Packages available here:
+&lt;a href="http://www.gperrone.it/software/bacula/bacula-backports/"&gt;http://www.gperrone.it/software/bacula/bacula-backports/&lt;/a&gt;&lt;/p&gt;</summary><category term="bacula"></category><category term="debian"></category></entry><entry><title>Poor man vmware consolidate backup</title><link href="https://www.gperrone.it/poor-man-vmware-consolidate-backup.html" rel="alternate"></link><published>2011-07-25T21:59:00+02:00</published><updated>2011-07-25T21:59:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2011-07-25:poor-man-vmware-consolidate-backup.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Update:&lt;/strong&gt; for an english version of this post you
-can read the README of pmvcb at &lt;a href="https://github.com/pbertera/pmvcb"&gt;github&lt;/a&gt;&lt;br /&gt;
+can read the README of pmvcb at &lt;a href="https://github.com/gperrone/pmvcb"&gt;github&lt;/a&gt;&lt;br /&gt;
 For bacula integration of pvmcb you can see the instruction on bacula &lt;a href="http://wiki.bacula.org/doku.php?id=application_specific_backups:poor_man_vmware_consolidated_backup"&gt;wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;VMware offre un pacchetto di backup per le macchine virtuali: &lt;a href="http://www.vmware.com/products/vi/cb_overview.html"&gt;VCB&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="VCB" src="https://www.bertera.it/vcb.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="VCB" src="https://www.gperrone.it/vcb.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Il VCB non fa altro che:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;eseguire uno snapshot di una VM&lt;/li&gt;
@@ -815,14 +815,14 @@ sull'host locale e sull'host remoto.&lt;/p&gt;
 &lt;li&gt;consolidare lo snapshot creato&lt;/li&gt;
 &lt;li&gt;eseguire i comandi specificati da &lt;strong&gt;-L&lt;/strong&gt; localmente&lt;/li&gt;
 &lt;li&gt;eseguire i comandi specificati da &lt;strong&gt;-R&lt;/strong&gt; sull'host ESXi remoto&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="backup"></category><category term="bacula"></category><category term="script"></category><category term="vmware"></category></entry><entry><title>VPN layer 3 con OpenSSH</title><link href="https://www.bertera.it/vpn-layer-3-con-openssh.html" rel="alternate"></link><published>2008-12-22T13:48:00+01:00</published><updated>2008-12-22T13:48:00+01:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2008-12-22:vpn-layer-3-con-openssh.html</id><summary type="html">&lt;p&gt;Dalla versione 4.3 di OpenSSH è stato introdotto il supporto per
+&lt;/ul&gt;</summary><category term="backup"></category><category term="bacula"></category><category term="script"></category><category term="vmware"></category></entry><entry><title>VPN layer 3 con OpenSSH</title><link href="https://www.gperrone.it/vpn-layer-3-con-openssh.html" rel="alternate"></link><published>2008-12-22T13:48:00+01:00</published><updated>2008-12-22T13:48:00+01:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2008-12-22:vpn-layer-3-con-openssh.html</id><summary type="html">&lt;p&gt;Dalla versione 4.3 di OpenSSH è stato introdotto il supporto per
 TUN/TAP. Questo sigifica che è possibile stabilire un tunnel cifrato tra
 due peer o due (o piu) reti.&lt;br /&gt;
-&lt;a href="https://github.com/pbertera/ssh-vpn"&gt;Questo&lt;/a&gt; script si
+&lt;a href="https://github.com/gperrone/ssh-vpn"&gt;Questo&lt;/a&gt; script si
 occupa di fare il discover dei device tun da utilizzare, assegnare gli
 indirizzi e le rotte al tunnel (locali e sul peer remoto) ed eseguire
 comandi aggiuntivi tramite un file di configurazione.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/pbertera/ssh-vpn/blob/master/example.conf"&gt;testvpn.conf&lt;/a&gt;:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/gperrone/ssh-vpn/blob/master/example.conf"&gt;testvpn.conf&lt;/a&gt;:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;SSH_OPTS=&amp;quot;-i /home/pietro/.ssh/id_dsa&amp;quot; # optional: options for ssh command
 RUSER=root  # user to login on remote peer
 PEER=172.42.10.2 # ip of remote peer
@@ -842,7 +842,7 @@ POST_TUN_LOCAL_COMMAND=&amp;#39;ip route add 192.168.6.0/24 via $RTUNADDR dev $L
 LOCAL_IP=&amp;quot;ip&amp;quot; # optional: local ip command binary
 REMOTE_IP=&amp;quot;ip&amp;quot; # optional: remote ip command binary
 SSH=&amp;quot;ssh&amp;quot; # optional: ssh binary
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="bash"></category><category term="ssh"></category><category term="vpn"></category></entry><entry><title>Check_web_form.py</title><link href="https://www.bertera.it/check_web_formpy.html" rel="alternate"></link><published>2008-09-24T16:42:00+02:00</published><updated>2008-09-24T16:42:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2008-09-24:check_web_formpy.html</id><summary type="html">&lt;p&gt;Check script di nagios per eseguire il submit di un form e cercare dei
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="bash"></category><category term="ssh"></category><category term="vpn"></category></entry><entry><title>Check_web_form.py</title><link href="https://www.gperrone.it/check_web_formpy.html" rel="alternate"></link><published>2008-09-24T16:42:00+02:00</published><updated>2008-09-24T16:42:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2008-09-24:check_web_formpy.html</id><summary type="html">&lt;p&gt;Check script di nagios per eseguire il submit di un form e cercare dei
 valori nella response del server.&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;  1
   2
@@ -1266,21 +1266,21 @@ valori nella response del server.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;p&gt;Download: &lt;a href="https://github.com/pbertera/junk/blob/master/nagios-stuff/check_web_form.py"&gt;check_web_form.py&lt;/a&gt;&lt;/p&gt;</summary><category term="http"></category><category term="nagios"></category><category term="python"></category></entry><entry><title>PowerChute con apcupsd</title><link href="https://www.bertera.it/powerchute-con-apcupsd.html" rel="alternate"></link><published>2008-09-03T17:37:00+02:00</published><updated>2008-09-03T17:37:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2008-09-03:powerchute-con-apcupsd.html</id><summary type="html">&lt;p&gt;Dalla versione 3.14 &lt;a href="http://www.apcupsd.org"&gt;apcupsd&lt;/a&gt; supporta il
+&lt;p&gt;Download: &lt;a href="https://github.com/gperrone/junk/blob/master/nagios-stuff/check_web_form.py"&gt;check_web_form.py&lt;/a&gt;&lt;/p&gt;</summary><category term="http"></category><category term="nagios"></category><category term="python"></category></entry><entry><title>PowerChute con apcupsd</title><link href="https://www.gperrone.it/powerchute-con-apcupsd.html" rel="alternate"></link><published>2008-09-03T17:37:00+02:00</published><updated>2008-09-03T17:37:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2008-09-03:powerchute-con-apcupsd.html</id><summary type="html">&lt;p&gt;Dalla versione 3.14 &lt;a href="http://www.apcupsd.org"&gt;apcupsd&lt;/a&gt; supporta il
 protocollo PowerChute di APC:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.apcupsd.org/manual/Configuration_Examples.html#SECTION000135000000000000000"&gt;PowerChute Network Shutdown Driver
 (PCNET)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I backport per Debian etch:
-&lt;span&gt;&lt;a href="http://www.bertera.it/software/apcupsd/"&gt;http://www.bertera.it/software/apcupsd&lt;/a&gt;&lt;br /&gt;
-&lt;/span&gt;&lt;/p&gt;</summary><category term="apcupsd"></category><category term="backports"></category><category term="debian"></category><category term="linux"></category><category term="powerchute"></category></entry><entry><title>SQL Server backup con Bacula</title><link href="https://www.bertera.it/sql-server-backup-con-bacula.html" rel="alternate"></link><published>2008-05-30T17:06:00+02:00</published><updated>2008-05-30T17:06:00+02:00</updated><author><name>admin</name></author><id>tag:www.bertera.it,2008-05-30:sql-server-backup-con-bacula.html</id><summary type="html">&lt;p&gt;In teoria con una versione recente di Bacula ed il supporto VSS si
+&lt;span&gt;&lt;a href="http://www.gperrone.it/software/apcupsd/"&gt;http://www.gperrone.it/software/apcupsd&lt;/a&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;</summary><category term="apcupsd"></category><category term="backports"></category><category term="debian"></category><category term="linux"></category><category term="powerchute"></category></entry><entry><title>SQL Server backup con Bacula</title><link href="https://www.gperrone.it/sql-server-backup-con-bacula.html" rel="alternate"></link><published>2008-05-30T17:06:00+02:00</published><updated>2008-05-30T17:06:00+02:00</updated><author><name>admin</name></author><id>tag:www.gperrone.it,2008-05-30:sql-server-backup-con-bacula.html</id><summary type="html">&lt;p&gt;In teoria con una versione recente di Bacula ed il supporto VSS si
 dovrebbe poter eseguire il backup in maniera consistente prelevando
 direttamente i file dei database.&lt;br /&gt;
 Per chi non si fida
-&lt;a href="https://github.com/pbertera/junk/blob/master/mssql-backup/dump.sql"&gt;questa&lt;/a&gt; stored
+&lt;a href="https://github.com/gperrone/junk/blob/master/mssql-backup/dump.sql"&gt;questa&lt;/a&gt; stored
 procedure esegue il dump di tutti i database utente in file .BAK.&lt;/p&gt;
 &lt;p&gt;Viene installata ed eseguita tramite
-&lt;a href="https://github.com/pbertera/junk/blob/master/mssql-backup/pre-backup.bat"&gt;questo&lt;/a&gt;
+&lt;a href="https://github.com/gperrone/junk/blob/master/mssql-backup/pre-backup.bat"&gt;questo&lt;/a&gt;
 .bat richiamato da un “ClientRunBeforeJob”. (Ovvio che la directory che
 contiene i .BAK deve essere compresa nel FIleSet del client).&lt;/p&gt;
-&lt;p&gt;Lo script &lt;a href="https://github.com/pbertera/junk/blob/master/mssql-backup/post-backup.bat"&gt;post-bakup&lt;/a&gt;
+&lt;p&gt;Lo script &lt;a href="https://github.com/gperrone/junk/blob/master/mssql-backup/post-backup.bat"&gt;post-bakup&lt;/a&gt;
 si occupa di ripulire la directory di appoggio dai dump.&lt;/p&gt;</summary><category term="bacula"></category><category term="sql server"></category><category term="windows"></category></entry></feed>

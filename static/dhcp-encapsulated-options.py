@@ -3,7 +3,7 @@
 # -*- coding: UTF-8 -*-
 # -*- Mode: Python -*-
 #
-# Pietro Bertera <pietro@bertera.it>
+# Giuseppe Perrone <pietro@gperrone.it>
 
 import sys
 

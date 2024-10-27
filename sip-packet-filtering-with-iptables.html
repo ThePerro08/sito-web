@@ -3,13 +3,13 @@
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/pygments/default.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/pygments/default.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link href="https://www.bertera.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Pietro Bertera's Blog Atom">
+    <link href="https://www.gperrone.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Giuseppe Perrone's Blog Atom">
 
 
 
@@ -30,57 +30,57 @@
 <meta name="author" content="admin" />
 <meta name="description" content="One of the most powerful iptables match is the u32 module. Using the u32 match you are able to write a firewall rule matching against a single bit of a network packet. If you wanna play with u32 module you have to be prepared to deal with a syntax very ..." />
 <meta name="keywords" content="iptables, netfilter, python, sip">
-<meta property="og:site_name" content="Pietro Bertera's Blog"/>
+<meta property="og:site_name" content="Giuseppe Perrone's Blog"/>
 <meta property="og:title" content="SIP packets filtering with iptables"/>
 <meta property="og:description" content="One of the most powerful iptables match is the u32 module. Using the u32 match you are able to write a firewall rule matching against a single bit of a network packet. If you wanna play with u32 module you have to be prepared to deal with a syntax very ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://www.bertera.it/sip-packet-filtering-with-iptables.html"/>
+<meta property="og:url" content="https://www.gperrone.it/sip-packet-filtering-with-iptables.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2014-01-22 23:50:00+01:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="https://www.bertera.it/author/admin.html">
+<meta property="article:author" content="https://www.gperrone.it/author/admin.html">
 <meta property="article:section" content="VoIP"/>
 <meta property="article:tag" content="iptables"/>
 <meta property="article:tag" content="netfilter"/>
 <meta property="article:tag" content="python"/>
 <meta property="article:tag" content="sip"/>
 <meta property="og:image" content="//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120">
-  <title>Pietro Bertera's Blog &ndash; SIP packets filtering with iptables</title>
+  <title>Giuseppe Perrone's Blog &ndash; SIP packets filtering with iptables</title>
 </head>
 <body>
   <aside>
     <div>
-      <a href="https://www.bertera.it">
-        <img src="//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120" alt="Pietro Bertera" title="Pietro Bertera">
+      <a href="https://www.gperrone.it">
+        <img src="/images/FotoBadge.png" alt="New Description" title="Giuseppe Perrone">
       </a>
-      <h1><a href="https://www.bertera.it">Pietro Bertera</a></h1>
+      <h1><a href="https://www.gperrone.it">Giuseppe Perrone</a></h1>
 <p>Something about ...</p>      <nav>
         <ul class="list">
-          <li><a href="https://www.bertera.it/pages/about.html#about">About</a></li>
-          <li><a href="https://www.bertera.it/pages/contact.html#contact">Contact</a></li>
+          <li><a href="https://www.gperrone.it/pages/about.html#about">About</a></li>
+          <li><a href="https://www.gperrone.it/pages/contact.html#contact">Contact</a></li>
         </ul>
       </nav>
       <ul class="social">
-        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/pietrobertera" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="sc-github" href="https://github.com/pbertera" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/pbertera" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="sc-rss" href="//bertera.it/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/giuseppeperrone" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/gperrone" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/gperrone" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-rss" href="//gperrone.it/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
       </ul>
     </div>
   </aside>
   <main>
     <nav>
-      <a href="https://www.bertera.it">Home</a>
+      <a href="https://www.gperrone.it">Home</a>
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
-      <a href="https://www.bertera.it/feeds/all.atom.xml">Atom</a>
+      <a href="https://www.gperrone.it/feeds/all.atom.xml">Atom</a>
     </nav>
 
 <article>
   <header>
     <h1 id="sip-packet-filtering-with-iptables">SIP packets filtering with iptables</h1>
-    <p>Posted on Wed 22 January 2014 in <a href="https://www.bertera.it/category/voip.html">VoIP</a></p>
+    <p>Posted on Wed 22 January 2014 in <a href="https://www.gperrone.it/category/voip.html">VoIP</a></p>
   </header>
   <div>
     <p>One of the most powerful <a href="http://www.netfilter.org">iptables</a> match is
@@ -129,7 +129,7 @@ Jan 22 23:00:28 bradbury kernel: --call-to-3381234567IN= OUT=br0 SRC=xxx.xxx.xxx
 
 
 <p>You can write your rules in a more simple way using my</p>
-<p><a href="https://github.com/pbertera/scripts/blob/master/iptables-SIPu32.py">iptables-SIPu32.py python script</a>:</p>
+<p><a href="https://github.com/gperrone/scripts/blob/master/iptables-SIPu32.py">iptables-SIPu32.py python script</a>:</p>
 <div class="highlight"><pre><span></span>iptables -I OUTPUT 1 -p udp  \! -f -m u32 --u32 $(./iptables-SIPu32.py &quot;INVITE sip:3381234567&quot;) -j LOG --log-prefix &quot;-j LOG --log-prefix &quot;--call-to-3381234567 &quot;
 </pre></div>
 
@@ -139,10 +139,10 @@ Jan 22 23:00:28 bradbury kernel: --call-to-3381234567IN= OUT=br0 SRC=xxx.xxx.xxx
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://www.bertera.it/tag/iptables.html">iptables</a>
-      <a href="https://www.bertera.it/tag/netfilter.html">netfilter</a>
-      <a href="https://www.bertera.it/tag/python.html">python</a>
-      <a href="https://www.bertera.it/tag/sip.html">sip</a>
+      <a href="https://www.gperrone.it/tag/iptables.html">iptables</a>
+      <a href="https://www.gperrone.it/tag/netfilter.html">netfilter</a>
+      <a href="https://www.gperrone.it/tag/python.html">python</a>
+      <a href="https://www.gperrone.it/tag/sip.html">sip</a>
     </p>
   </div>
 <div id="disqus_thread"></div>
@@ -159,7 +159,7 @@ Jan 22 23:00:28 bradbury kernel: --call-to-3381234567IN= OUT=br0 SRC=xxx.xxx.xxx
 
     <footer>
 <p>
-  &copy; Pietro Bertera 2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+  &copy; Giuseppe Perrone 2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </p>
 <p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p><p>
   <a rel="license"
@@ -183,10 +183,10 @@ Jan 22 23:00:28 bradbury kernel: --call-to-3381234567IN= OUT=br0 SRC=xxx.xxx.xxx
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
-  "name": " Pietro Bertera's Blog ",
-  "url" : "https://www.bertera.it",
+  "name": " Giuseppe Perrone's Blog ",
+  "url" : "https://www.gperrone.it",
   "image": "//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120",
-  "description": "Pietro Bertera's Thoughts and Writings"
+  "description": "Giuseppe Perrone's Thoughts and Writings"
 }
 </script>
 <script type="application/ld+json">
@@ -200,10 +200,10 @@ Jan 22 23:00:28 bradbury kernel: --call-to-3381234567IN= OUT=br0 SRC=xxx.xxx.xxx
   "author": {
     "@type": "Person",
     "name": "admin",
-    "url": "https://www.bertera.it/author/admin.html"
+    "url": "https://www.gperrone.it/author/admin.html"
   },
   "image": "//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120",
-  "url": "https://www.bertera.it/sip-packet-filtering-with-iptables.html",
+  "url": "https://www.gperrone.it/sip-packet-filtering-with-iptables.html",
   "description": "One of the most powerful iptables match is the u32 module. Using the u32 match you are able to write a firewall rule matching against a single bit of a network packet. If you wanna play with u32 module you have to be prepared to deal with a syntax very ..."
 }
 </script></body>

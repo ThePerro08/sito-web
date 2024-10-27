@@ -3,13 +3,13 @@
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/pygments/default.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.bertera.it/theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/pygments/default.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.gperrone.it/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link href="https://www.bertera.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Pietro Bertera's Blog Atom">
+    <link href="https://www.gperrone.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Giuseppe Perrone's Blog Atom">
 
 
 
@@ -30,76 +30,76 @@
 <meta name="author" content="admin" />
 <meta name="description" content="In teoria con una versione recente di Bacula ed il supporto VSS si dovrebbe poter eseguire il backup in maniera consistente prelevando direttamente i file dei database. Per chi non si fida questa stored procedure esegue il dump di tutti i database utente in file .BAK. Viene installata ed eseguita ..." />
 <meta name="keywords" content="bacula, sql server, windows">
-<meta property="og:site_name" content="Pietro Bertera's Blog"/>
+<meta property="og:site_name" content="Giuseppe Perrone's Blog"/>
 <meta property="og:title" content="SQL Server backup con Bacula"/>
 <meta property="og:description" content="In teoria con una versione recente di Bacula ed il supporto VSS si dovrebbe poter eseguire il backup in maniera consistente prelevando direttamente i file dei database. Per chi non si fida questa stored procedure esegue il dump di tutti i database utente in file .BAK. Viene installata ed eseguita ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://www.bertera.it/sql-server-backup-con-bacula.html"/>
+<meta property="og:url" content="https://www.gperrone.it/sql-server-backup-con-bacula.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2008-05-30 17:06:00+02:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="https://www.bertera.it/author/admin.html">
+<meta property="article:author" content="https://www.gperrone.it/author/admin.html">
 <meta property="article:section" content="Systems"/>
 <meta property="article:tag" content="bacula"/>
 <meta property="article:tag" content="sql server"/>
 <meta property="article:tag" content="windows"/>
 <meta property="og:image" content="//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120">
-  <title>Pietro Bertera's Blog &ndash; SQL Server backup con Bacula</title>
+  <title>Giuseppe Perrone's Blog &ndash; SQL Server backup con Bacula</title>
 </head>
 <body>
   <aside>
     <div>
-      <a href="https://www.bertera.it">
-        <img src="//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120" alt="Pietro Bertera" title="Pietro Bertera">
+      <a href="https://www.gperrone.it">
+        <img src="/images/FotoBadge.png" alt="New Description" title="Giuseppe Perrone">
       </a>
-      <h1><a href="https://www.bertera.it">Pietro Bertera</a></h1>
+      <h1><a href="https://www.gperrone.it">Giuseppe Perrone</a></h1>
 <p>Something about ...</p>      <nav>
         <ul class="list">
-          <li><a href="https://www.bertera.it/pages/about.html#about">About</a></li>
-          <li><a href="https://www.bertera.it/pages/contact.html#contact">Contact</a></li>
+          <li><a href="https://www.gperrone.it/pages/about.html#about">About</a></li>
+          <li><a href="https://www.gperrone.it/pages/contact.html#contact">Contact</a></li>
         </ul>
       </nav>
       <ul class="social">
-        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/pietrobertera" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="sc-github" href="https://github.com/pbertera" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/pbertera" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="sc-rss" href="//bertera.it/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/giuseppeperrone" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/gperrone" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/gperrone" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-rss" href="//gperrone.it/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
       </ul>
     </div>
   </aside>
   <main>
     <nav>
-      <a href="https://www.bertera.it">Home</a>
+      <a href="https://www.gperrone.it">Home</a>
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
-      <a href="https://www.bertera.it/feeds/all.atom.xml">Atom</a>
+      <a href="https://www.gperrone.it/feeds/all.atom.xml">Atom</a>
     </nav>
 
 <article>
   <header>
     <h1 id="sql-server-backup-con-bacula">SQL Server backup con Bacula</h1>
-    <p>Posted on Fri 30 May 2008 in <a href="https://www.bertera.it/category/systems.html">Systems</a></p>
+    <p>Posted on Fri 30 May 2008 in <a href="https://www.gperrone.it/category/systems.html">Systems</a></p>
   </header>
   <div>
     <p>In teoria con una versione recente di Bacula ed il supporto VSS si
 dovrebbe poter eseguire il backup in maniera consistente prelevando
 direttamente i file dei database.<br />
 Per chi non si fida
-<a href="https://github.com/pbertera/junk/blob/master/mssql-backup/dump.sql">questa</a> stored
+<a href="https://github.com/gperrone/junk/blob/master/mssql-backup/dump.sql">questa</a> stored
 procedure esegue il dump di tutti i database utente in file .BAK.</p>
 <p>Viene installata ed eseguita tramite
-<a href="https://github.com/pbertera/junk/blob/master/mssql-backup/pre-backup.bat">questo</a>
+<a href="https://github.com/gperrone/junk/blob/master/mssql-backup/pre-backup.bat">questo</a>
 .bat richiamato da un “ClientRunBeforeJob”. (Ovvio che la directory che
 contiene i .BAK deve essere compresa nel FIleSet del client).</p>
-<p>Lo script <a href="https://github.com/pbertera/junk/blob/master/mssql-backup/post-backup.bat">post-bakup</a>
+<p>Lo script <a href="https://github.com/gperrone/junk/blob/master/mssql-backup/post-backup.bat">post-bakup</a>
 si occupa di ripulire la directory di appoggio dai dump.</p>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://www.bertera.it/tag/bacula.html">bacula</a>
-      <a href="https://www.bertera.it/tag/sql-server.html">sql server</a>
-      <a href="https://www.bertera.it/tag/windows.html">windows</a>
+      <a href="https://www.gperrone.it/tag/bacula.html">bacula</a>
+      <a href="https://www.gperrone.it/tag/sql-server.html">sql server</a>
+      <a href="https://www.gperrone.it/tag/windows.html">windows</a>
     </p>
   </div>
 <div id="disqus_thread"></div>
@@ -116,7 +116,7 @@ si occupa di ripulire la directory di appoggio dai dump.</p>
 
     <footer>
 <p>
-  &copy; Pietro Bertera 2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+  &copy; Giuseppe Perrone 2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </p>
 <p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p><p>
   <a rel="license"
@@ -140,10 +140,10 @@ si occupa di ripulire la directory di appoggio dai dump.</p>
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
-  "name": " Pietro Bertera's Blog ",
-  "url" : "https://www.bertera.it",
+  "name": " Giuseppe Perrone's Blog ",
+  "url" : "https://www.gperrone.it",
   "image": "//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120",
-  "description": "Pietro Bertera's Thoughts and Writings"
+  "description": "Giuseppe Perrone's Thoughts and Writings"
 }
 </script>
 <script type="application/ld+json">
@@ -157,10 +157,10 @@ si occupa di ripulire la directory di appoggio dai dump.</p>
   "author": {
     "@type": "Person",
     "name": "admin",
-    "url": "https://www.bertera.it/author/admin.html"
+    "url": "https://www.gperrone.it/author/admin.html"
   },
   "image": "//s.gravatar.com/avatar/f64fc3d41c2a8368feff0b7672ca7571?s=120",
-  "url": "https://www.bertera.it/sql-server-backup-con-bacula.html",
+  "url": "https://www.gperrone.it/sql-server-backup-con-bacula.html",
   "description": "In teoria con una versione recente di Bacula ed il supporto VSS si dovrebbe poter eseguire il backup in maniera consistente prelevando direttamente i file dei database. Per chi non si fida questa stored procedure esegue il dump di tutti i database utente in file .BAK. Viene installata ed eseguita ..."
 }
 </script></body>
